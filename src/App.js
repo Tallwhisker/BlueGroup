@@ -18,15 +18,16 @@ function App() {
         >
           Learn React
         </a>
-      </header>       /* Test comment */
-    </div>      
-    <BrowserRouter>
+      </header>
+      <BrowserRouter>
         <Routes>
             <Route path="" element={{}}> {/*Header element, sidor som barn under */}
 
             </Route>
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>   
+    </div>      
+    
   );
 }
 
