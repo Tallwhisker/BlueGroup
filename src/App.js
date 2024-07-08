@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -21,11 +20,10 @@ function App() {
       </header>
       <BrowserRouter>
         <Routes>
-            <Route path="" element={{}}> {/*Header element, sidor som barn under */}
-
-            </Route>
+            {/* <Route path="" element={{}}> {/*Header element, sidor som barn under */}
+            {/*</Route> */}
         </Routes>
-      </BrowserRouter>   
+    </BrowserRouter>
     </div>      
     
   );
