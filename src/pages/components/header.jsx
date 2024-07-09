@@ -13,7 +13,7 @@ export default function Header() {
                     <div className="collapse navbar-collapse gap-5" id="navbarNav1">
                         <form className="d-flex input-group py-2" role="search group">
                             <input className="form-control" type="search" placeholder="Sök" aria-label="Search" />
-                            <button className="btn btn-outline-secondary btn-bg-body" type="submit"><i className="bi bi-binoculars"/></button>
+                            <button className="btn btn-outline-secondary btn-bg-body" type="submit"><i className="bi bi-binoculars" /></button>
                         </form>
                         <ul className="navbar-nav gap-5 mx-auto">
                             <li className="nav-item">
@@ -31,37 +31,40 @@ export default function Header() {
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav> 
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container">
+                <div class="container justify-content-end gap-5">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                        <ul class="navbar-nav gap-5">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vårt Sortiment
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Kategori 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Kategori 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Kategori 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Hitta rätt tillbehör</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Kundservice & Support</a>
+                            </li>
                         </ul>
-                        </li>
-                    </ul>
+                        <div>
+                            <input type="radio" class="btn-check" name="options-base" id="optionSV" autocomplete="off" checked />
+                            <label class="btn" for="optionSV">SV</label>
+                            <input type="radio" class="btn-check" name="options-base" id="optionEN" autocomplete="off" />
+                            <label class="btn" for="optionEN">EN</label>
+                        </div>
                     </div>
                 </div>
-                </nav>
+            </nav>
         </header>
         <Outlet />
         </>
