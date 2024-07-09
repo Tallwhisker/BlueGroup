@@ -30,7 +30,22 @@ import './Categories.css';
       </div>
     
      <div className="col-sm-6 corr_right">
-        <img key={1}  src={big_src} alt="" />
+
+         <img key={1}  src={big_src} alt="" />
+  
+
+      {/* <div className="mySlides fade">
+         <img src="img_snow_wide.jpg" style="width:100%"/>
+         <div className="text">Caption Two</div>
+      </div>
+
+      <div className="mySlides fade">
+         <img src="img_mountains_wide.jpg" style="width:100%" />
+         <div className="text">Caption Three</div>
+      </div> */}
+
+      
+      
       </div>
      </div>
     </div>

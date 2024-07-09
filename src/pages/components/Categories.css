@@ -21,8 +21,17 @@ li button{
 
 
 
+.col-sm-6.corr_right img.hide {
+
+    transition: opacity 5s;
+    opacity: 0;
+    width:400px;
+} 
+
 
 .col-sm-6.corr_right img{
+    transition: opacity 5s;
+    opacity: 1;
     width:400px;
 }
 
@@ -33,6 +42,10 @@ li button{
     width:400px;
     height:auto;
  }
+
+
+
+
 
 
 @media only screen and (min-width: 350px) 
