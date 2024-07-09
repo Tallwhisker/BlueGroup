@@ -10,6 +10,7 @@ import {
 //Komponenter \/
 
 import Header from './pages/components/header';
+import Footer from './pages/components/footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 
                 </Route>
             </Routes>
+            <Footer /> {/*Footer element */}
         </BrowserRouter>
     </div>     
   );
