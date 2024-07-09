@@ -17,7 +17,7 @@ import './Categories.css';
     
   
      <div className="container-fluid">
-     <div className='row corr' style={{width:'100%',textAlign:'center'}}>
+     <div className='row' style={{width:'100%',textAlign:'center'}}>
       <div className="col-sm-6 corr_left">
       <ul>
         <li key={1}><button href="#"><img src={src1} /><span style={{marginLeft:'20px'}}></span>Hem Elektronik</button></li>
