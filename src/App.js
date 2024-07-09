@@ -5,7 +5,7 @@ import Categories from './pages/components/Categories';
 function App() {
   return (
     <div className="App">
-      <header>
+      <header className="App-header">
            <Categories />
       </header>
       <BrowserRouter>
