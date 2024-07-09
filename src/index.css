@@ -12,3 +12,16 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+.card-body {
+    .bi-bag {
+        font-size: 1.5rem;
+        color: black;
+    }
+}
+
+header {
+    .bi-person, .bi-house, .bi-star, .bi-cart {
+        font-size: 1.5rem;
+    }
+}
