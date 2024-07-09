@@ -1,66 +1,75 @@
-import { Outlet, Link } from "react-router-dom";
+import { 
+    Outlet, 
+    Link 
+} from "react-router-dom";
 
 export default function Header() {
     return (
         <>
         <header>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" id="AccountNavigation">
                 <div className="container d-flex justify-content-between gap-5">
-                    <Link className="navbar-brand px-2" to="/">BlueGroup WebShop</Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div className="d-flex">
+                        <i className="bi bi-bootstrap h3"></i>
+                        <Link className="navbar-brand px-2 py-0" to="/">BlueGroup WebShop</Link>
+                    </div>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#AccNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse gap-5" id="navbarNav1">
+                    <div className="collapse navbar-collapse gap-5" id="AccNavDropdown">
                         <form className="d-flex input-group py-2" role="search group">
                             <input className="form-control" type="search" placeholder="Sök" aria-label="Search" />
                             <button className="btn btn-outline-secondary btn-bg-body" type="submit"><i className="bi bi-binoculars" /></button>
                         </form>
-                        <ul className="navbar-nav gap-5 mx-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="#"><i className="bi bi-house"></i> Hem</Link>
+                        <ul className="navbar-nav gap-5" key={"headerNavi"}>
+                            <li className="nav-item" key={"headerNavi1"}>
+                                <Link className="nav-link active" aria-current="page" to="/"><i className="bi bi-house"></i> Hem</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="#"><i className="bi bi-person"></i> Konto</Link>
+                            <li className="nav-item" key={"headerNavi2"}>
+                                <Link className="nav-link" to="/"><i className="bi bi-person"></i> Konto</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="#"><i className="bi bi-star"></i> Favoriter</Link>
+                            <li className="nav-item" key={"headerNavi3"}>
+                                <Link className="nav-link" to="/"><i className="bi bi-star"></i> Favoriter</Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" key={"headerNavi4"}>
                                 <Link className="nav-link disabled" aria-disabled="true"><i className="bi bi-cart"></i> Kundvagn</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav> 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container justify-content-end gap-5">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg bg-body-tertiary" id="CategoryNavigation">
+                <div className="container justify-content-end gap-5">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#CatNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-                        <ul class="navbar-nav gap-5">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="collapse navbar-collapse justify-content-between" id="CatNavDropdown">
+                        <ul className="navbar-nav gap-5" key={"headerCategories"}>
+                            <li className="nav-item dropdown" key={"headerCategories0"}>
+                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Vårt Sortiment
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Kategori 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Kategori 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Kategori 3</a></li>
+                                <ul className="dropdown-menu">
+                                    <li><Link className="dropdown-item" href="/" key={"headerCategories1"}>Hemelektronik</Link></li>
+                                    <li><Link className="dropdown-item" href="/" key={"headerCategories2"}>Resor</Link></li>
+                                    <li><Link className="dropdown-item" href="/" key={"headerCategories3"}>Mat</Link></li>
+                                    <li><Link className="dropdown-item" href="/" key={"headerCategories4"}>Kläder</Link></li>
+                                    <li><Link className="dropdown-item" href="/" key={"headerCategories5"}>Sportprylar</Link></li>
+                                    <li><Link className="dropdown-item" href="/" key={"headerCategories6"}>Matlagningsprylar</Link></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Hitta rätt tillbehör</a>
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" href="/">Hitta rätt tillbehör</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Kundservice & Support</a>
+                            <li className="nav-item">
+                                <Link className="nav-link" href="/">Kundservice & Support</Link>
                             </li>
                         </ul>
                         <div>
-                            <input type="radio" class="btn-check" name="options-base" id="optionSV" autocomplete="off" checked />
-                            <label class="btn" for="optionSV">SV</label>
-                            <input type="radio" class="btn-check" name="options-base" id="optionEN" autocomplete="off" />
-                            <label class="btn" for="optionEN">EN</label>
+                            <input type="radio" className="btn-check" name="options-base" id="optionSV" autocomplete="off" checked />
+                            <label className="btn" for="optionSV">SV</label>
+                            <input type="radio" className="btn-check" name="options-base" id="optionEN" autocomplete="off" />
+                            <label className="btn" for="optionEN">EN</label>
                         </div>
                     </div>
                 </div>
