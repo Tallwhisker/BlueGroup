@@ -49,7 +49,7 @@ function Categories() {
                 else {
                     setI(0);
                 }
-            }, 10000);
+            }, 10000);   //10000
         }
     });
 
