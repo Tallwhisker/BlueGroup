@@ -6,8 +6,8 @@ import {
 export default function Header() {
     return (
         <>
-        <header>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary" id="AccountNavigation">
+        <header className="mb-5">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary p-0" id="AccountNavigation">
                 <div className="container d-flex justify-content-between gap-5">
                     <div className="d-flex">
                         <i className="bi bi-bootstrap h3"></i>
@@ -38,7 +38,7 @@ export default function Header() {
                     </div>
                 </div>
             </nav> 
-            <nav className="navbar navbar-expand-lg bg-body-tertiary" id="CategoryNavigation">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary p-0" id="CategoryNavigation">
                 <div className="container justify-content-end gap-5">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#CatNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
