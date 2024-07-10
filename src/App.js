@@ -5,17 +5,15 @@ import Categories from './pages/components/Categories';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-           <Categories />
-      </header>
       <BrowserRouter>
         <Routes>
-            {/* <Route path="" element={{}}> {/*Header element, sidor som barn under */}
+            {/* <Route path="" element={{}}> Header element, sidor som barn under */}
+            <Route index element={<Categories />} />
+
             {/*</Route> */}
         </Routes>
     </BrowserRouter>
     </div>      
-    
   );
 }
 
