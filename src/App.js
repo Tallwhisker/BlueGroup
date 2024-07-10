@@ -20,7 +20,7 @@ function App() {
         <BrowserRouter basename='/bluegroup'>
             <Routes>
                 <Route path="/" element={<Header />}> {/*Header element, sidor som barn under */}
-									<Route index element={<Categories />} />
+                    <Route index element={<Categories />} />
                 </Route>
             </Routes>
             <Footer /> {/*Footer element */}

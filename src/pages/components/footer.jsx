@@ -3,9 +3,9 @@ import { Outlet, Link } from "react-router-dom";
 export default function Footer() {
     return (
         <>
-            <footer className="footer fixed-bottom text-lg-start bg-dark text-white">
+            <footer className="footer text-lg-start bg-dark text-white mt-5">
                 <section>
-                    <div className="container text-md-start mt-5">
+                    <div className="container text-md-start pt-5">
                         {/*rad*/}
                         <div className="row mt-3">
                             {/*kolumn 1*/}
@@ -89,7 +89,6 @@ export default function Footer() {
                     </div>
                 </section>
             </footer>
-            <Outlet />
         </>
     );
 }

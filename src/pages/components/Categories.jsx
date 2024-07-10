@@ -56,7 +56,7 @@ function Categories() {
     return (
         <section id='heroSection'>
             <div className="container">
-                <div className="row p-2">
+                <div className="row">
                     <div className="col-12 col-xl-4  d-flex justify-content-center align-items-center">
                         <ul className='m-0 p-0' key={"catList"}>
                             <li key={"catList1"}><button href="#"><img src={src1} /><span style={{ marginLeft: '20px' }}></span>Hemelektronik</button></li>

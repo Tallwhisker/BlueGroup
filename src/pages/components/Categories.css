@@ -16,13 +16,16 @@ li button {
     /* box-shadow: 0 2px 2px rgba(0,0,0,0.2);  */
 }
 
+#heroSection {
+    min-height: 20rem;
+}
 
 img.show {
     transition: opacity 1.5s;
     opacity: 1;
 
     /* max-height & width för att hålla bilden till fast storlek */
-    max-height: 315px;
+    max-height: 310px;
     max-width: 100%;
 }
 
@@ -32,7 +35,7 @@ img.hide {
     opacity: 0;
 
     /* max-height & width för att hålla bilden till fast storlek */
-    max-height: 315px;
+    max-height: 310px;
     max-width: 100%;
 }
 
