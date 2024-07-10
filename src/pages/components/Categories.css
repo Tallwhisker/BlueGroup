@@ -19,19 +19,22 @@ li button{
     /* box-shadow: 0 2px 2px rgba(0,0,0,0.2);  */
 }
 
+img.show {
+  transition: opacity 1.5s;
+  opacity: 1;
 
+  width:400px;
+} 
 
-.col-sm-6.corr_right img.hide {
+img.hide {
+    transition: opacity 1.5s;
+    opacity: 0; 
 
-    transition: opacity 5s;
-    opacity: 0;
     width:400px;
 } 
 
 
 .col-sm-6.corr_right img{
-    transition: opacity 5s;
-    opacity: 1;
     width:400px;
 }
 
@@ -63,11 +66,15 @@ li button{
  {
       
       .col-sm-6.corr_right img{
-        margin-left:50px;
+        margin-left:50px;    
         text-align:center;
-        width:260px;
-        height:auto;
-    }
+        
+        overflow:hidden;
+        /* width:220px; */
+
+        height: 290px;
+    } 
+
 }
     
 
@@ -75,7 +82,13 @@ li button{
  {
       
       .col-sm-6.corr_right img{
-        width:400px;
+        height:290px;
+        overflow:hidden;
+        /* width:280px; */
+    }
+
+    .col-sm-6.corr_left{
+      margin-right:-20px;
     }
 }
 
@@ -85,12 +98,14 @@ li button{
     
       .col-sm-6.corr_right img{
         margin-left:30px;
-        height:auto;
+        height:290px;
         width:400px;
+        margin-right: 20px;
       }
 
     .col-sm-6.corr_left{
         margin-right:-40px;
+        margin-left:20px;
       }
 }
 
@@ -100,7 +115,7 @@ li button{
     
       .col-sm-6.corr_right img{
         margin-left:0px;
-        height:auto;
+        height:290px;
         width:400px;
       }
 
@@ -113,13 +128,13 @@ li button{
  {
     
       .col-sm-6.corr_left{
-        margin-right:-100px;
+        margin-right:-50px;
       }
 
       .col-sm-6.corr_right img{
         width:500px;
-        height:285px;
-        margin-left:-100px;
+        height:290px;
+        margin-left:-80px;
       }
     
 }
@@ -128,12 +143,12 @@ li button{
  {
 
       .col-sm-6.corr_left{
-        margin-right:-150px;
+        margin-right:-100px;
       }
 
       .col-sm-6.corr_right img{
         width:500px;
-        height:285px;
+        height:290px;
         margin-left:-100px;
       }
     
@@ -150,12 +165,14 @@ li button{
       }   */
 
       .col-sm-6.corr_left{
-        margin-right:-200px;
+        margin-right:-150px;
+        margin-left: 40px;
       }
 
       .col-sm-6.corr_right img{
         width:500px;
         margin-left:-100px;
+        margin-right: 40px;
       }
     
 }
