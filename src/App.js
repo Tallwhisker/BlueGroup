@@ -10,7 +10,9 @@ import {
 //Komponenter \/
 
 import Header from './pages/components/header';
+import Categories from './pages/components/Categories';
 import Footer from './pages/components/footer';
+
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
         <BrowserRouter basename='/bluegroup'>
             <Routes>
                 <Route path="/" element={<Header />}> {/*Header element, sidor som barn under */}
-
+									<Route index element={<Categories />} />
                 </Route>
             </Routes>
             <Footer /> {/*Footer element */}
