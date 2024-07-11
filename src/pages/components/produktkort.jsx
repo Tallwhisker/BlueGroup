@@ -11,13 +11,10 @@ const demoProdukt = {
     "quantity": 101
 };
 
-<<<<<<< HEAD
 
 
 // console.log(demoLista[0].type,demoLista[1].type,demoLista[2].type);
 
-=======
->>>>>>> 053f73491eb65d239313deb688e5c24bd49857be
 /*
 Produkt = {
     brand,
@@ -33,14 +30,9 @@ Produkt = {
 //Parametern "produkt" är 1st produkt (ser ut som demoProdukt)
 export default function ProduktKort({ produkt }) {
 
-<<<<<<< HEAD
     //demoProdukt = produkt;
 
     const [ content, setContent ] = useState(produkt);
-=======
-    //Content = produkt - Alla värden i produkt-objektet blir content.värde
-    const [ content, setContent ] = useState(demoProdukt);
->>>>>>> 053f73491eb65d239313deb688e5c24bd49857be
 
     //Ändra w-25 när kortet har en container som sätter storleken
     return (
@@ -54,13 +46,7 @@ export default function ProduktKort({ produkt }) {
                 {/* content.name = produkt.name */}
                 <h5 className="card-title">{content.name}</h5>
                 <div className="container-fluid row px-0 py-3">
-<<<<<<< HEAD
                     <div className="col-9 d-flex flex-column justify-content-between" >
-=======
-                    <div className="col-9 d-flex flex-column justify-content-between">
-
-                        {/* content.price/original_price = produkt.price/original_price */}
->>>>>>> 053f73491eb65d239313deb688e5c24bd49857be
                         <CardPrice price={content.price} orgPrice={content.original_price} />
 
                         {/* content.quantity = produkt.quantity */}
