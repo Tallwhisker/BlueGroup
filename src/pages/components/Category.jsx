@@ -3,7 +3,7 @@ import './Category.css';
 import {Link} from 'react-router-dom';
 import ProduktKort from './produktkort';
 
-function Category({id,catName}) {
+function Category({id,demoList,catName}) {
 
 
 
@@ -17,7 +17,23 @@ function Category({id,catName}) {
       {id:6,slogan:'Behöver du en ny stekpanna ? Eller en kastrull från Jamie Olivers sortiment. Vi har det.'}
  ];
 
- let demoArray_mat = ["Biff","En Produkt av exemplarisk kvalitet. Kött från utvalda gårdar.(Kilopris)",700,'food/food_2.jpg']
+ const demoLista = [{"brand":"Dell","name":"Vostro 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"dell-vostro-3520-core-i5-16gb-512gb-156.jpg",
+  "price":5490,"original_price": 7490,"quantity": 101},
+  {"brand":"Samsung","name":"512GB 15.6","type":"something_else","image":"hjhj.jpg",
+      "price":2490,"original_price": 3490,"quantity": 101},
+      {"brand":"HP","name":"HP 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"db-156.jpg",
+          "price":5490,"original_price": 7490,"quantity": 101}
+];
+
+const demo = demoLista.filter(el=>
+  el.type=="electronics"
+);
+
+let txt = <><ProduktKort /><ProduktKort /><ProduktKort /></>; 
+
+
+console.log(demo.length);
+console.log(demo[0].type,demo[1].type);
 
   return (
     <div className="container">
@@ -28,8 +44,15 @@ function Category({id,catName}) {
           <p>{slogans[id-1].slogan}</p>
       </div>
       
-      <div className='container'>
-          <ProduktKort  />
+      <div className='container' style={{marginTop:'50px'}}>
+        <div className='row'>
+            {/*  <><ProduktKort />
+             <ProduktKort />      
+             <ProduktKort />      
+             <ProduktKort /></>    */}
+
+             {txt}
+        </div>        
       </div>
     </div>
   )
