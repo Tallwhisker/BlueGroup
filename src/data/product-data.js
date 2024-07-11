@@ -56,7 +56,7 @@ const data = {
 		},
 		{
 			"brand": "Samsung",
-			"name": "Samsung Series 7 TU65CU7105K 165,1 cm (65\") 4K Ultra HD Smart-TV Wi-Fi Svart",
+			"name": "TU65CU7105K 165,1 cm (65\") 4K Ultra HD Smart-TV Wi-Fi Svart",
 			"type": "electronics",
 			"image": "samsung-samsung-series-7-tu65cu7105k-1651-cm-65-4k-ultra-hd-smart-tv-wi-fi-svart.jpg",
 			"price": 6990,

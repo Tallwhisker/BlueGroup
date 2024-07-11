@@ -17,7 +17,24 @@ code {
 }
 
 header {
-    .bi-person, .bi-house, .bi-star, .bi-cart {
+
+    .bi-person,
+    .bi-house,
+    .bi-star,
+    .bi-cart {
         font-size: 1.5rem;
     }
+}
+
+.App {
+    font-size: 16px;
+    min-height: 100svh;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.card-body {
+    max-height: 192px;
 }
