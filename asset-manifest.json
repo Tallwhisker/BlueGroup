@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BlueGroup/static/css/main.d3b52119.css",
-    "main.js": "/BlueGroup/static/js/main.5b3e282e.js",
+    "main.css": "/BlueGroup/static/css/main.bae44b2d.css",
+    "main.js": "/BlueGroup/static/js/main.8ddf0421.js",
     "static/media/alice-springs-au.jpg": "/BlueGroup/static/media/alice-springs-au.47adaccbb08fdd271e47.jpg",
     "static/media/tulsa-us.jpg": "/BlueGroup/static/media/tulsa-us.5c7337a952e6ab8bbbdd.jpg",
     "static/media/koper-si.jpg": "/BlueGroup/static/media/koper-si.3a8194734315bfb8be38.jpg",
@@ -58,11 +58,11 @@
     "static/media/dell-vostro-3520-core-i5-16gb-512gb-156.jpg": "/BlueGroup/static/media/dell-vostro-3520-core-i5-16gb-512gb-156.588813c6557e1761221c.jpg",
     "index.html": "/BlueGroup/index.html",
     "static/media/blender_16.svg": "/BlueGroup/static/media/blender_16.add39afa89a7a8d796e2.svg",
-    "main.d3b52119.css.map": "/BlueGroup/static/css/main.d3b52119.css.map",
-    "main.5b3e282e.js.map": "/BlueGroup/static/js/main.5b3e282e.js.map"
+    "main.bae44b2d.css.map": "/BlueGroup/static/css/main.bae44b2d.css.map",
+    "main.8ddf0421.js.map": "/BlueGroup/static/js/main.8ddf0421.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3b52119.css",
-    "static/js/main.5b3e282e.js"
+    "static/css/main.bae44b2d.css",
+    "static/js/main.8ddf0421.js"
   ]
 }
