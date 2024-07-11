@@ -37,7 +37,7 @@ export default function ProduktKort({ produkt }) {
     //Ändra w-25 när kortet har en container som sätter storleken
     return (
          <div className="card text-start m-2 w-25" style={{minWidth:'220px',boxShadow:'0 2px 2px rgba(0,0,0,0.2)'}}>  
-            <img src={require(`../../../public/data/thumbnails/${content.image}`)} alt={content.name} className="card-img-top"  />
+            <img src={require(`./Images/thumbnails/${content.image}`)} alt={content.name} className="card-img-top"  />
             <div className="card-body">
 
                 {/* content.brand = produkt.brand */}

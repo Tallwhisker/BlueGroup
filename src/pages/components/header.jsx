@@ -50,12 +50,12 @@ export default function Header() {
                                     Vårt Sortiment
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" href="/" key={"headerCategories1"}>Hemelektronik</Link></li>
-                                    <li><Link className="dropdown-item" href="/" key={"headerCategories2"}>Resor</Link></li>
-                                    <li><Link className="dropdown-item" href="/" key={"headerCategories3"}>Mat</Link></li>
-                                    <li><Link className="dropdown-item" href="/" key={"headerCategories4"}>Kläder</Link></li>
-                                    <li><Link className="dropdown-item" href="/" key={"headerCategories5"}>Sportprylar</Link></li>
-                                    <li><Link className="dropdown-item" href="/" key={"headerCategories6"}>Matlagningsprylar</Link></li>
+                                    <li><Link className="dropdown-item" to="/Hemelektronik" key={"headerCategories1"}>Hemelektronik</Link></li>
+                                    <li><Link className="dropdown-item" to="/Resor" key={"headerCategories2"}>Resor</Link></li>
+                                    <li><Link className="dropdown-item" to="/Mat" key={"headerCategories3"}>Mat</Link></li>
+                                    <li><Link className="dropdown-item" to="/Klader" key={"headerCategories4"}>Kläder</Link></li>
+                                    <li><Link className="dropdown-item" to="/Sport" key={"headerCategories5"}>Sportprylar</Link></li>
+                                    <li><Link className="dropdown-item" to="/Matlagning" key={"headerCategories6"}>Matlagningsprylar</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
