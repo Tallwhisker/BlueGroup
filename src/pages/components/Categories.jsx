@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './Categories.css';
+import {Link,useNavigate} from 'react-router-dom';
 
 
 
@@ -48,10 +49,40 @@ function Categories() {
                 else {
                     setI(0);
                 }
-            }, 10000);
+            }, 10000);   //10000
         }
     });
 
+    const navigate = useNavigate();
+
+    function handleCatChange(id){
+
+        let helpStr = "";
+        switch(id){
+           case 1:
+              helpStr='/Hemelektronik';
+              break;
+           case 2:
+               helpStr='/Resor';
+               break;
+           case 3:
+              helpStr='/Mat';
+              break;
+           case 4:
+                helpStr='/Klader';
+                break;
+           case 5:
+              helpStr='/Sport';
+              break;
+           case 6:
+               helpStr='/Matlagning';
+               break;
+        }
+        
+        navigate(helpStr);
+    }
+
+    let catList = [{id:1,name:'Hemelektronik'},{id:2,name:'Resor'},{id:3,name:'Mat'},{id:4,name:'Kläder'},{id:5,name:'Sportprylar'},{id:6,name:'Matlagningsprylar'}];
 
     return (
         <section id='heroSection'>
@@ -59,12 +90,12 @@ function Categories() {
                 <div className="row">
                     <div className="col-12 col-xl-4  d-flex justify-content-center align-items-center">
                         <ul className='m-0 p-0' key={"catList"}>
-                            <li key={"catList1"}><button href="#"><img src={src1} /><span style={{ marginLeft: '20px' }}></span>Hemelektronik</button></li>
-                            <li key={"catList2"}><button href="#"><img src={src2} /><span style={{ marginLeft: '20px' }}>Resor</span></button></li>
-                            <li key={"catList3"}><button href="#"><img src={src3} /><span style={{ marginLeft: '20px' }}></span>Mat</button></li>
-                            <li key={"catList4"}><button href="#"><img src={src4} /><span style={{ marginLeft: '20px' }}>Kläder</span></button></li>
-                            <li key={"catList5"}><button href="#"><img src={src5} /><span style={{ marginLeft: '20px' }}>Sportprylar</span></button></li>
-                            <li key={"catList6"}><button href="#"><img src={src6} /><span style={{ marginLeft: '20px' }}>Matlagningsprylar</span></button></li>
+                            <li key={catList[0].id}><button onClick={()=>handleCatChange(catList[0].id)} href="#"><img src={src1} /><span style={{ marginLeft: '20px' }}>Hemelektronik</span></button></li>
+                            <li key={catList[1].id}><button onClick={()=>handleCatChange(catList[1].id)} href="#"><img src={src2} /><span style={{ marginLeft: '20px' }}>Resor</span></button></li>
+                            <li key={catList[2].id}><button onClick={()=>handleCatChange(catList[2].id)} href="#"><img src={src3} /><span style={{ marginLeft: '20px' }}></span>Mat</button></li>
+                            <li key={catList[3].id}><button onClick={()=>handleCatChange(catList[3].id)} href="#"><img src={src4} /><span style={{ marginLeft: '20px' }}>Kläder</span></button></li>
+                            <li key={catList[4].id}><button onClick={()=>handleCatChange(catList[4].id)} href="#"><img src={src5} /><span style={{ marginLeft: '20px' }}>Sportprylar</span></button></li>
+                            <li key={catList[5].id}><button onClick={()=>handleCatChange(catList[5].id)} href="#"><img src={src6} /><span style={{ marginLeft: '20px' }}>Matlagningsprylar</span></button></li>
                         </ul>
                     </div>
                     <div className="col-12 col-xl-8 d-flex justify-content-center align-items-center container-fluid">
