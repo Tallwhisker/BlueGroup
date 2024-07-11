@@ -17,7 +17,7 @@ import Footer from './pages/components/footer';
 function App() {
   return (
     <div className="App">
-        <BrowserRouter basename='/bluegroup'>
+        <BrowserRouter basename='/BlueGroup'>
             <Routes>
                 <Route path="/" element={<Header />}> {/*Header element, sidor som barn under */}
                     <Route index element={<Categories />} />
