@@ -1,22 +1,17 @@
-import './App.css';
 import { 
     BrowserRouter, 
     Routes, 
     Route 
 } from "react-router-dom";
-
 //Skript /\
 
 //Komponenter \/
-
 import Header from './pages/components/header';
 import Categories from './pages/components/Categories';
 import Footer from './pages/components/footer';
 import Category from './pages/components/Category';
 
-
 import { databas } from './data/datamodule';
-
 
 function App() {
   return (
@@ -32,7 +27,6 @@ function App() {
                     <Route path="/Sport" element={<Category id={5} catName={'SportPrylar'} prodList={databas.sports} />} />
                     <Route path="/Matlagning" element={<Category id={6} catName={'Matlagningsprylar'} prodList={databas.kitchenware} />} />
                 </Route>
-                
             </Routes>
             <Footer /> {/*Footer element */}
         </BrowserRouter>

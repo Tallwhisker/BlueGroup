@@ -2,7 +2,6 @@ import {
     Outlet, 
     Link 
 } from "react-router-dom";
-import ProduktKort from "./produktkort";
 
 export default function Header() {
     return (
@@ -76,7 +75,6 @@ export default function Header() {
                 </div>
             </nav>
         </header>
-        <ProduktKort />
         <Outlet />
         </>
     );

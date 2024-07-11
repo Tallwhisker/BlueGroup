@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Link } from "react-router-dom";
 
 /*
@@ -16,14 +15,16 @@ Produkt = {
 //Parametern "produkt" är 1st produkt (ser ut som ovan)
 export default function ProduktKort({ produkt }) {
 
-    //Ändra w-25 när kortet har en container som sätter storleken
+    //Ändra w-25 om kortet har en container som sätter storleken
     return (
-         <div className="card text-start m-2 w-25" style={{minWidth:'220px',boxShadow:'0 2px 2px rgba(0,0,0,0.2)'}}>  
+         <div className="card text-start m-2 w-25 justify-content-between" style={{minWidth:'220px',boxShadow:'0 2px 2px rgba(0,0,0,0.2)'}}>  
             <img src={require(`./Images/thumbnails/${produkt.image}`)} alt={produkt.name} className="card-img-top"  />
             <div className="card-body">
             
-                <p className="card-text my-0">{produkt.brand}</p>
-                <h5 className="card-title">{produkt.name}</h5>
+                <div>
+                    <p className="card-text my-0">{produkt.brand}</p>
+                    <h5 className="card-title">{produkt.name}</h5>
+                </div>
                 
                   <div className="container-fluid row px-0 py-3">
                     <div className="col-9 d-flex flex-column justify-content-between" >
