@@ -1,20 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 
-const demoProdukt = {
-    "brand": "Dell",
-    "name": "Vostro 3520 Core i5 16GB 512GB 15.6",
-    "type": "electronics",
-    "image": "dell-vostro-3520-core-i5-16gb-512gb-156.jpg",
-    "price": 5490,
-    "original_price": 7490,
-    "quantity": 101
-};
-
-
-
-// console.log(demoLista[0].type,demoLista[1].type,demoLista[2].type);
-
 /*
 Produkt = {
     brand,
@@ -27,30 +13,23 @@ Produkt = {
 }
 */
 
-//Parametern "produkt" är 1st produkt (ser ut som demoProdukt)
+//Parametern "produkt" är 1st produkt (ser ut som ovan)
 export default function ProduktKort({ produkt }) {
-
-    //demoProdukt = produkt;
-
-    const [ content, setContent ] = useState(produkt);
 
     //Ändra w-25 när kortet har en container som sätter storleken
     return (
          <div className="card text-start m-2 w-25" style={{minWidth:'220px',boxShadow:'0 2px 2px rgba(0,0,0,0.2)'}}>  
-            <img src={require(`./Images/thumbnails/${content.image}`)} alt={content.name} className="card-img-top"  />
+            <img src={require(`./Images/thumbnails/${produkt.image}`)} alt={produkt.name} className="card-img-top"  />
             <div className="card-body">
-
-                {/* content.brand = produkt.brand */}
-                <p className="card-text my-0">{content.brand}</p>
-
-                {/* content.name = produkt.name */}
-                <h5 className="card-title">{content.name}</h5>
-                <div className="container-fluid row px-0 py-3">
+            
+                <p className="card-text my-0">{produkt.brand}</p>
+                <h5 className="card-title">{produkt.name}</h5>
+                
+                  <div className="container-fluid row px-0 py-3">
                     <div className="col-9 d-flex flex-column justify-content-between" >
-                        <CardPrice price={content.price} orgPrice={content.original_price} />
-
-                        {/* content.quantity = produkt.quantity */}
-                        <CardQuantity amount={content.quantity} />
+                    
+                        <CardPrice price={produkt.price} orgPrice={produkt.original_price} />
+                        <CardQuantity amount={produkt.quantity} />
                     </div>
                     <div className="col-3 text-center">
                     <Link to="/"><i className="bi bi-bag card-buyitem text-black fs-2"></i></Link>
@@ -101,5 +80,5 @@ function CardPrice({price, orgPrice}) {
         <h6 className="card-subtitle">
             {` ${price} SEK`}
         </h6>
-        );
+      );
 };
