@@ -3,9 +3,10 @@ import './Category.css';
 import {Link} from 'react-router-dom';
 import ProduktKort from './produktkort';
 
-function Category({id,demoList,catName}) {
+function Category({id,catName}) {
 
 
+    //  ["electronics","travel","food","clothing","sports","kitchenware"]
 
   // [{id:1,name:'Hemelektronik'},{id:2,name:'Resor'},{id:3,name:'Mat'},{id:4,name:'Kläder'},{id:5,name:'Sportprylar'},{id:6,name:'Matlagningsprylar'}];
 
@@ -17,23 +18,36 @@ function Category({id,demoList,catName}) {
       {id:6,slogan:'Behöver du en ny stekpanna ? Eller en kastrull från Jamie Olivers sortiment. Vi har det.'}
  ];
 
- const demoLista = [{"brand":"Dell","name":"Vostro 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"dell-vostro-3520-core-i5-16gb-512gb-156.jpg",
+ const demoLista = [{"brand":"Dell","name":"Vostro 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"voxicon-office-mus-m30wlb-rf-trådlös.jpg",
   "price":5490,"original_price": 7490,"quantity": 101},
-  {"brand":"Samsung","name":"512GB 15.6","type":"something_else","image":"hjhj.jpg",
-      "price":2490,"original_price": 3490,"quantity": 101},
-      {"brand":"HP","name":"HP 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"db-156.jpg",
-          "price":5490,"original_price": 7490,"quantity": 101}
+      {"brand":"HP","name":"HP 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"koper-si.jpg",
+          "price":5490,"original_price": 7490,"quantity": 101},
+          {"brand":"Lenovo","name":"Lenovo Thinkpad 15.6","type":"electronics","image":"färskpotatis-otvättad-ca-50g-klass-1-styck.jpg",
+            "price":5490,"original_price": 7490,"quantity": 101}
 ];
 
-const demo = demoLista.filter(el=>
+// "hp-255-g8-ryzen-5-8gb-256gb-156.jpg"    "dell-vostro-3520-core-i5-16gb-512gb-156.jpg"
+
+/* const demo = demoLista.filter(el=>
   el.type=="electronics"
-);
-
-let txt = <><ProduktKort /><ProduktKort /><ProduktKort /></>; 
+); */
 
 
-console.log(demo.length);
-console.log(demo[0].type,demo[1].type);
+
+
+// skapar en ihopbyggd komponent: <><ProduktKort /><ProduktKort /><ProduktKort />...</>; 
+function buildProductCards()
+{
+  const rows = [];
+  for (let i = 0; i < demoLista.length; i++) {
+    rows.push(<ProduktKort produkt={demoLista[i]}/>);
+  }
+  return <>{rows}</>;
+}
+
+
+let comps = buildProductCards();
+
 
   return (
     <div className="container">
@@ -51,7 +65,7 @@ console.log(demo[0].type,demo[1].type);
              <ProduktKort />      
              <ProduktKort /></>    */}
 
-             {txt}
+             {comps}
         </div>        
       </div>
     </div>

@@ -12,26 +12,6 @@ const demoProdukt = {
 };
 
 
-/* const demoLista = [{"brand":"Dell","name":"Vostro 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"dell-vostro-3520-core-i5-16gb-512gb-156.jpg",
-    "price":5490,"original_price": 7490,"quantity": 101},
-    {"brand":"Samsung","name":"512GB 15.6","type":"something_else","image":"hjhj.jpg",
-        "price":2490,"original_price": 3490,"quantity": 101},
-        {"brand":"HP","name":"HP 3520 Core i5 16GB 512GB 15.6","type":"electronics","image":"db-156.jpg",
-            "price":5490,"original_price": 7490,"quantity": 101}
-]; */
-
-// const demo = JSON.parse('"' + demoLista[0] + '"');
-
-//const demo = JSON.parse(demoLista[0]);
-
-// demoLista.sort((a, b) => (a.type > b.type? 1 : -1));
-
-/* const demo = demoLista.filter(el=>
-    el.type=="electronics"
-);
-console.log(demo.length);
-console.log(demo[0].type,demo[1].type); */
-
 
 // console.log(demoLista[0].type,demoLista[1].type,demoLista[2].type);
 
@@ -48,17 +28,20 @@ Produkt = {
 */
 
 export default function ProduktKort({ produkt }) {
-    const [ content, setContent ] = useState(demoProdukt);
+
+    //demoProdukt = produkt;
+
+    const [ content, setContent ] = useState(produkt);
 
     //Ändra w-25 när kortet har en container som sätter storleken
     return (
-         <div className="card text-start m-2 w-25" style={{minWidth:'220px'}}>  
-            <img src={require(`../../../public/data/thumbnails/${content.image}`)} alt={content.name} className="card-img-top" />
+         <div className="card text-start m-2 w-25" style={{minWidth:'220px',boxShadow:'0 2px 2px rgba(0,0,0,0.2)'}}>  
+            <img src={require(`../../../public/data/thumbnails/${content.image}`)} alt={content.name} className="card-img-top"  />
             <div className="card-body">
                 <p className="card-text my-0">{content.brand}</p>
                 <h5 className="card-title">{content.name}</h5>
                 <div className="container-fluid row px-0 py-3">
-                    <div className="col-9 d-flex flex-column justify-content-between">
+                    <div className="col-9 d-flex flex-column justify-content-between" >
                         <CardPrice price={content.price} orgPrice={content.original_price} />
                         <CardQuantity amount={content.quantity} />
                     </div>
