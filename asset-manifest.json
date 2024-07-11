@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/bluegroup/static/css/main.b32b5083.css",
+    "main.js": "/bluegroup/static/js/main.0b2c0df2.js",
+    "static/js/453.e14d3cd2.chunk.js": "/bluegroup/static/js/453.e14d3cd2.chunk.js",
+    "static/media/sports_4.jpg": "/bluegroup/static/media/sports_4.368a11822400145eaf71.jpg",
+    "static/media/food_1.jpg": "/bluegroup/static/media/food_1.a11ade2e66e2beb6809f.jpg",
+    "static/media/food_3.jpg": "/bluegroup/static/media/food_3.cd17d78d75d3bdf77a1c.jpg",
+    "static/media/food_2.jpg": "/bluegroup/static/media/food_2.e50881c2057bf1d31701.jpg",
+    "static/media/travel_4.jpg": "/bluegroup/static/media/travel_4.c8bd1bf1ec7cbeb63e13.jpg",
+    "static/media/travel_2.jpg": "/bluegroup/static/media/travel_2.514edb30ba73f6026668.jpg",
+    "static/media/sports_1.jpg": "/bluegroup/static/media/sports_1.4c0e019a65cd5df112d5.jpg",
+    "static/media/sports_2.jpg": "/bluegroup/static/media/sports_2.8a5550564ce914c16399.jpg",
+    "static/media/media_1.jpg": "/bluegroup/static/media/media_1.02fe62f645ba120cd650.jpg",
+    "static/media/sports_3.jpg": "/bluegroup/static/media/sports_3.92f00547beebefe3ce08.jpg",
+    "static/media/travel_1.jpg": "/bluegroup/static/media/travel_1.aafc0fc74fdab6fdafbf.jpg",
+    "static/media/travel_3.jpg": "/bluegroup/static/media/travel_3.a8237eae18f56b903b3c.jpg",
+    "static/media/cooking_1.jpg": "/bluegroup/static/media/cooking_1.028cd53c20f14ab96b87.jpg",
+    "static/media/cooking_2.jpg": "/bluegroup/static/media/cooking_2.a75e8784e4ce86f4fa58.jpg",
+    "static/media/media_2.jpg": "/bluegroup/static/media/media_2.4bc9ab2ff8d351575925.jpg",
+    "static/media/media_4.jpg": "/bluegroup/static/media/media_4.efee03ff05345b62d2d7.jpg",
+    "static/media/cooking_3.jpg": "/bluegroup/static/media/cooking_3.7d9246a606735e2d6dfa.jpg",
+    "static/media/food_4.jpg": "/bluegroup/static/media/food_4.4ed05432785996084443.jpg",
+    "static/media/cooking_4.jpg": "/bluegroup/static/media/cooking_4.df091ca56d822eef1f0b.jpg",
+    "static/media/media_3.jpg": "/bluegroup/static/media/media_3.aaca8f3cde4823ad1a67.jpg",
+    "static/media/clothes_3.jpg": "/bluegroup/static/media/clothes_3.53722a7530ad750199a6.jpg",
+    "static/media/clothes_4.jpg": "/bluegroup/static/media/clothes_4.c26af9d169e03bab00da.jpg",
+    "static/media/clothes_2.jpg": "/bluegroup/static/media/clothes_2.c2e3cabccd50ff0d22b4.jpg",
+    "static/media/clothes_1.jpg": "/bluegroup/static/media/clothes_1.9fe79e18a9f65c0d3c71.jpg",
+    "index.html": "/bluegroup/index.html",
+    "static/media/blender_16.svg": "/bluegroup/static/media/blender_16.add39afa89a7a8d796e2.svg",
+    "main.b32b5083.css.map": "/bluegroup/static/css/main.b32b5083.css.map",
+    "main.0b2c0df2.js.map": "/bluegroup/static/js/main.0b2c0df2.js.map",
+    "453.e14d3cd2.chunk.js.map": "/bluegroup/static/js/453.e14d3cd2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b32b5083.css",
+    "static/js/main.0b2c0df2.js"
+  ]
+}
